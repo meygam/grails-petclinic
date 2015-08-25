@@ -80,6 +80,10 @@ task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
 }
 
+war {
+    baseName "petclinic"
+}
+
 publishing {
     publications {
         mavenJava(MavenPublication) {
